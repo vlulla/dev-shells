@@ -2,7 +2,7 @@
 
 with pkgs.rPackages;
 let
-  rpkgs = [ data_table ggplot2 ];
+  rpkgs = [ data_table ggplot2 simstudy ];
   additional-vlpkgs = [
         Matrix RSQLite Rcpp SOAR biganalytics bigmemory bitabulate caret
         digest doMC dplyr e1071 ff foreach gbm ggmap ggplot2 glmnet leaflet
