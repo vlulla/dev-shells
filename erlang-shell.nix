@@ -6,5 +6,5 @@ let
   erlangpkgs = [];
 in
 mkShell {
-  buildInputs = [ erlang ] ++ erlangpkgs ;
+  buildInputs = [ erlangR23 ] ++ erlangpkgs ;
 }

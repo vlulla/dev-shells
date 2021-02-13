@@ -14,5 +14,5 @@ let
 in
 with pkgs;
 mkShell {
-  buildInputs = [ R ] ++ rpkgs;
+  buildInputs = [ R ] ++ rpkgs ++ [ digest ];
 }
