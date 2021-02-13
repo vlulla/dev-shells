@@ -10,8 +10,8 @@ let
   inla = pkgs.rPackages.buildRPackage {
     name = "inla";
     src = pkgs.fetchurl {
-      url = "https://inla.r-inla-download.org/R/testing/src/contrib/INLA_21.01.08-1.tar.gz";
-      sha256 = "1hvx2qf5xhc8ff62ff76x3svdpvbd54i309q1isla9l1x9srd810";
+      url = "https://inla.r-inla-download.org/R/testing/src/contrib/INLA_21.01.26.tar.gz";
+      sha256 = "0fkl3m586kgf0y0w3ayrmx23p2i3kwr0xj81l4s6ggncw22179mx";
     };
     nativeBuildInputs = inlaDeps;
     propagateBuildInputs = inlaDeps;
