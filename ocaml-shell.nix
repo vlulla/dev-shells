@@ -7,4 +7,5 @@ let
 in
 mkShell {
   buildInputs = [ ocaml ] ++ ocamlpkgs ;
+  MANPATH = "${ocaml.outPath}/share/man";
 }

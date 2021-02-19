@@ -15,4 +15,5 @@ in
 with pkgs;
 mkShell {
   buildInputs = [ R ] ++ rpkgs ++ [ digest ];
+  MANPATH="${R.outPath}/share/man";
 }

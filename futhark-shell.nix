@@ -2,4 +2,5 @@
 
 pkgs.mkShell {
   buildInputs = [ pkgs.futhark ];
+  MANPATH="${pkgs.futhark.outPath}/share/man";
 }
