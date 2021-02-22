@@ -2,6 +2,7 @@
 
 with pkgs;
 pkgs.mkShell {
+  name = "nix-development-shell";
   buildInputs = [ which htop zlib jq coreutils findutils zstd lz4 fzf ripgrep sqlite ];
 
   shellHook = ''

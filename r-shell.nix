@@ -14,6 +14,7 @@ let
 in
 with pkgs;
 mkShell {
+  name = "R-development-shell";
   buildInputs = [ R ] ++ rpkgs ++ [ digest ];
   MANPATH="${R.outPath}/share/man";
 }

@@ -14,7 +14,7 @@ let
       (suf == builtins.substring idx strlen str);
   pkgNameFromDerivationPath = dpath: 
     let 
-      ispkg = isPrefix "/nix/store/" dpath;
+      ispkg = isPrefix builtins.storeDir dpath;
       len = builtins.stringLength dpath;
     in
       if ispkg then
