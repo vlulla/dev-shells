@@ -18,7 +18,7 @@ let
       len = builtins.stringLength dpath;
     in
       if ispkg then
-        builtins.substring 44 len dpath
+        builtins.substring 44 len dpath # index 44 ==> length of storeDir ++ "/" ++ 32 character hash!
       else
         null
         ;
