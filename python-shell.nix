@@ -7,4 +7,5 @@ in
 pkgs.mkShell {
   name = "python-development-shell";
   buildInputs = [ pypkgs ];
+  MANPATH = "${pkgs.python3}/share/man";
 }
