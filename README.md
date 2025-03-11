@@ -7,9 +7,9 @@ run the following:
 $ nix-shell ./erlang-shell.nix
 ```
 
-See the page [Declarative and reproducible developer 
-environments](https://nix.dev/tutorials/declarative-and-reproducible-developer-environments.html)
-for a more detailed explanation of creating a shell environment using Nix.
+See the page [Declarative shell environments with
+shell.nix](https://nix.dev/tutorials/first-steps/declarative-shell) for a more
+detailed explanation of creating a shell environment using Nix.
 
 And, the nice thing about these shells is that they can be cascaded.  So, for
 instance if you need a shell with Python and OCaml then launch one dev-shell.
